@@ -1,0 +1,292 @@
+/* ************************** Custom Properties ************************** */
+
+:root {
+  --first-color: rgb(217, 0, 98);
+  --first-alpha-color: rgba(217, 0, 98, 0.75);
+  --second-color: rgb(20, 25, 45);
+  --second-alpha-color: rgba(20, 25, 45, 0.75);
+  --third-color: rgb(80, 20, 100);
+  --third-alpha-color: rgba(80, 20, 100, 0.75);
+
+  --link-color: rgb(80, 158, 227);
+  --link-alpha-color: rgb(80, 158, 227, 0.75);
+
+  --bg-color: rgb(245, 245, 245);
+  --bg-alpha-color: rgba(245, 245, 245, 0.75);
+  --bs-white: rgb(255, 255, 255);
+}
+
+/* ************************** Reset Properties ************************** */
+
+/* 
+Uso de fuente Raleway de Google Fonts
+
+ En este caso se usó la fuente Raleway. Por ser una fuente de tipo Variable, según la última actualización de Google Fonts, solo se le puede cambiar
+     el grosor al texto dentro de la etiqueta linK; en este caso quedó así: 
+
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@100,700&display=swap" rel="stylesheet">
+    
+    Porque se le agregaron los grosores de fuente 400 (regular 400) y 700 (bold 700).
+     
+     -->
+
+¿Cómo obtener el CDN? 
+            Se accederá a Google Fonts y se descargará la tipografía Raleway. Para usarla, se seguirán los siguientes pasos: 
+
+                    1. Acceder a Google Fonts: https://fonts.google.com/
+                    2. Se busca la fuente deseada y se da clic en el botón "Get font".
+                    3. En la parte superior derecha se muestra el ícono de un "Carrito de compras"; al dar clic se mostrará la fuente que se eligió.
+                    4. Seleccionar el botón "Get embed code".
+                    5. En este caso, se usó la fuente "Raleway", la cual es definida como una fuente variable. Cuando se usa este tipo de fuentes, para indicar
+                       los grosores deseados es imperativo hacerlo dentro de la etiqueta link, como se hizo acá y se explicó justo arriba; sin embargo,
+                       si es una fuente que no es variable, se podrá dar clic en el botón "Changed styles" y elegir los estilos deseados, para que,  automáticamente 
+                       vaya cambiando la etiqueta link de tal modo que incluya los estilos seleccionados.
+                    6. Copiar el código y pegarlo en el encabezado del sitio web después de los estilos de Bootstrap, si los hubiera.
+                    7. En la hoja externa de CSS agregar el siguiente estilo: 
+                            body {
+                                font-family: 'Raleway', sans-serif;
+                            }
+*/
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Se resetean los estilos de todos los enlaces del sitio web. */
+a {
+  color: var(--link-color);
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: var(--first-color);
+}
+
+/* ************************** Bootstrap Styles (modificaciones que se realizarán a Bootstrap) ************************** */
+/* En esta sección se accederá a clases ya existentes en Boostrap para realizar modificaciones de elementos específicos. */
+
+/* Esta clase de Bootstrap se debe modificar, para que el caption de las imágenes del carrusel
+se muestre  sobre las imágenes, de lo contrario, el texto del caption quedará oculto
+debajo de las imágenes. */
+.carousel-caption {
+  z-index: 1;
+}
+
+
+/* IMPORTANTE: al inspeccionar el carrousel, se corrobora que la imagen  de "anterior" (flecha hacia la izquierda) del carrusel, se encuentra definida dentro de la clase "carousel-control-prev-icon". Dentro de esa clase, se encuentra definida una imagen de fondo, la cual tiene asignado un color predeterminado (fill='%23fff' - El códigio %23 representa el símbolo #); sin embargo, como se desea modificar, en este ejemplo quedará así: 
+
+        fill='%23d90062'
+ 
+ El color anterior, es exactamente el color que tiene asignado la variable "--first-color", solo que convertido
+ a código Hexadecimal.
+  */
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
+
+/* IMPORTANTE: al inspeccionar el carrousel, se corrobora que la imagen  de "siguiente" (flecha hacia la derecha) del carrusel, se encuentra definida dentro de la clase "carousel-control-next-icon". Dentro de esa clase, se ecnuentra definida una imagen de fondo, la cual tiene asignado un color predeterminado (fill='%23fff' - El códigio %23 representa el símbolo #); sin embargo, como se desea modificar, en este ejemplo quedará así: 
+
+        fill='%23d90062'
+ 
+     El color anterior, es exactamente el color que tiene asignado la variable "--first-color", solo que convertido
+    a código hexadecimal. */
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+/* Modificar únicamente la altura de los contenedores e imágenes del carrusel que se encuentra en la página de "Servicios" con el id "carouselService". */
+
+#carouselService .carousel-inner {
+  height: 85vh;
+}
+
+#carouselService .carousel-item {
+  height: 100%;
+}
+
+#carouselService .carousel-item img {
+  height: 100%;
+  /* 
+  IMPORTANTE: 
+  Si en la propiedad "object-fit" se asigna el valor "contain", la imagen no abarcará el 100% del 
+  ancho del contenedor. */
+  width: 100%;
+  object-fit: contain;
+}
+
+/* La clase "dropdown-item" está asignada a cada enlace que forma parte del submenú de la barra de navegación; en este caso, 
+los submenú del menú "sitios". */
+.dropdown-item {
+  color: var(--first-alpha-color);
+  font-weight: bold;
+  transition: all 0.3s ease-out;
+}
+
+/* La clase "dropdown-item" está asignada a cada enlace que forma parte del submenú de la barra de navegación; en este caso, 
+los submenú del menú "sitios". */
+.dropdown-item:hover {
+  color: var(--third-alpha-color);
+  font-weight: bold;
+}
+
+
+.navbar-brand img {
+  /* Se asigna el valor "width: auto" para que la imagen mantenga su relación de aspecto y no se deforme.  */
+  width: auto;
+  height: 8rem;
+}
+
+/* El elemento que tiene asignada la clase "navbar-toggler", es el que contiene el menú hamburguesa.  */
+.navbar-dark .navbar-toggler {
+  /* IMPORTANTE: la variable --bs-navbar-toggler-icon-bg ya está definida dentro de la hoja de estilos
+    de Bootsrap. Para comprobarlo, se puede abrir el archivo minificado de CSS; sin embargo, por estar
+    minificado, es difícil comprender bien su estructura, por lo que, para cambiar el formato de CSS 
+    solamente para comprobar lo que acá se explica, se hará uso de la extensión "CSS Formatter"
+    la cual desminifica un archivo de CSS mostrándolo en el formato normal (desminificado). 
+    Esto se consigue abriendo la ventana de comandos "Ctrl + Shift + P), y luego escribiendo: Format Document.
+    
+    Al busca la variable --bs-navbar-toggler-icon-bg se comprueba que está dentro de varias clases, 
+    sin embargo, la clase que nos interesa, es la clase "navbar-dark". La variable --bs-navbar-toggler-icon-bg define el SVG del menú hamburguesa con un color prederminado (rgba%28255, 255, 255, 0.55%29 - los símbolos %28 y %29 corresponden a los paréntesis de apertura y cierre respectivamente); sin embargo, se le cambiará
+    la opacidad, y se le asignará una opacidad de 1 (en lugar de la que tenía (0.55). */
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  transition: all 0.3s ease-out;
+}
+
+/* El elemento que tiene asignada la clase "navbar-toggler", es el que contiene el menú hamburguesa.  */
+.navbar-dark .navbar-toggler:hover {
+  /* IMPORTANTE: la variable --bs-navbar-toggler-icon-bg ya está definida dentro de la hoja de estilos
+    de Bootsrap. Para comprobarlo, se puede abrir el archivo minificado de CSS; sin embargo, por estar
+    minificado, es difícil comprender bien su estructura, por lo que, para cambiar el formato de CSS 
+    solamente para comprobar lo que acá se explica, se hará uso de la extensión "CSS Formatter"
+    la cual desminifica un archivo de CSS mostrándolo en el formato normal (desminificado). 
+    Esto se consigue abriendo la ventana de comandos "Ctrl + Shift + P), y luego escribiendo: Format Document.
+    
+    Al busca la variable --bs-navbar-toggler-icon-bg se comprueba que está dentro de varias clases, 
+    sin embargo, la clase que nos interesa, es la clase "navbar-dark". La variable --bs-navbar-toggler-icon-bg define el SVG del menú hamburguesa con un color prederminado (rgba%28255, 255, 255, 0.55%29 - los símbolos %28 y %29 corresponden a los paréntesis de apertura y cierre respectivamente). Como se desea cambiar el color de este SVG, el cual corresponde al menú hamburguesa, solamente se modifica dicho color y se asigna el color (rgba%28217, 0, 98, 0.55%29), el cual corresponde al color de la variable "--first-color". */
+  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28217, 0, 98, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  opacity: 0.75;
+}
+
+/* Se aplica el estilo a la clase "nav-item". Esta clase ya existe dentro de Bootsrap, por lo que realmente lo que se está haciendo es 
+modificando el estilo predeterminado de Bootstrap. La clase "nav-item" permite definir los elementos de lista de la 
+barra de navegación, en este caso, cada elemento de lista corresponde a un enlace de la barra de navegación. */
+
+.nav-item {
+  transition: all 0.3s ease-out;
+}
+
+.nav-item:hover {
+  background-color: var(--first-alpha-color);
+}
+
+.nav-link {
+  margin-left: 0rem;
+  color: var(--first-color);
+  font-size: 1.15rem;
+
+  /* Es posible asignarle a la tipograía "Raleway" que se está utilizando, porque
+    se está consumiendo también el grosor "700" (bold). */
+  font-weight: bold;
+}
+
+nav-link:hover {
+  /* Bootstrap ya tiene una variable
+    llamada así, sin embargo se declaró
+    igualmente al principio de este archivo, para
+    evitar futuros errores, en dado caso
+    Bootstrap le cambiara el nombre.*/
+  color: var(--bs-white);
+}
+
+/* ************************** My Styles ************************** */
+
+/* Mis propios estilos, personalizados */
+
+/* 
+|                     | Extra small | Small   | Medium  | Large   | X-Large  | XX-Large |
+|---------------------|-------------|---------|---------|---------|----------|----------|
+|                     | <576px      | ≥576px  | ≥768px  | ≥992px  | ≥1200px  | ≥1400px  |
+| `.container`        | 100%        | 540px   | 720px   | 960px   | 1140px   | 1320px   |
+| `.container-sm`     | 100%        | 540px   | 720px   | 960px   | 1140px   | 1320px   |
+| `.container-md`     | 100%        | 100%    | 720px   | 960px   | 1140px   | 1320px   |
+| `.container-lg`     | 100%        | 100%    | 100%    | 960px   | 1140px   | 1320px   |
+| `.container-xl`     | 100%        | 100%    | 100%    | 100%    | 1140px   | 1320px   |
+| `.container-xxl`    | 100%        | 100%    | 100%    | 100%    | 100%     | 1320px   |
+| `.container-fluid`  | 100%        | 100%    | 100%    | 100%    | 100%     | 100%     |
+
+ */
+
+/* Large devices (desktops, 992px and up) */
+/* Esta Media Query, se aplicará para los tamaños de pantalla Large (L), arriba de 992px. */
+/* Estos estilos se aplican, para que al colocar el puntero sobre cada elemento de la barra de navegación,
+no se cambie de color el área rectangular del botón, sino que se siga manteniendo como color de fondo
+del botón, el mismo color de la barra de navegación. Esto se consigue asignando el color transparente (transparent)
+como color de fondo de cada elemento (nav-item). */
+@media (min-width: 992px) {
+  .nav-item:hover {
+    background-color: transparent;
+  }
+}
+
+.bg-color {
+  background-color: var(--bg-color);
+}
+
+.bg-alpha-color {
+  background-color: var(--bg-alpha-color);
+}
+
+/* Bootstrap sugiere agregar los estilos directamente así, por medio del atributo "style", pero NO  
+   es lo más recomendable: 
+
+    <nav class="navbar" style="background-color: #e3f2fd;">
+          <!-- Navbar content -->
+    </nav>
+*/
+.bg-gradient-blue-green {
+  background-color: rgba(83, 184, 152, 1);
+  background-image: linear-gradient(135deg,
+      rgba(47, 145, 224, 0.91),
+      rgba(7, 31, 51, 0.97) 79%);
+
+  background-image: linear-gradient(131deg,
+      rgba(28, 118, 173, 0.92),
+      rgba(83, 184, 152, 1));
+}
+
+.bg-hero-image {
+  /* IMPORTANTE: la variable "--bg-image" no se encuentra declarada en este archivo de CSS, como todas las demás, si no que se declara dentro del atributo "style" de la sección "Single Page" del archivo "sitios.html". La razón de hacerlo así es que,
+    este mismo selector, será usado por las secciones "Single Page" y "Multi Page", y se necesita una imagen distinta para cada una. Si la variable "--bg-image" se declará
+    dentro de este archivo CSS, como se hizo con el resto de variables, sería necesario crear un selector para la sección de "Sigle Page" con su respectiva variable, y otro
+    selector para la sección "Multi Page", con su respectiva variable. Para evitar esto, la
+    variable "--bg-image" se declara dentro de los atributos "style" de cada sección. ,
+     */
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  /* cover: escala la imagen al mayor tamaño posible sin recortarla ni estirarla; es 
+              decir, que cambiará el tamaño de la imagen de fondo para asegurarse de 
+              que el elemento contenedor esté completamente cubierto. Al utilizar este valor, el usuario se asegura de que se cubra por completo el elemento contenedor, 
+              pero esto no asegura que se muestre toda la imagen, pues dependiendo de las dimensiones del contenedor, tomará solamente cierta parte de la imagen.  
+    */
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-second-alpha-color {
+  background-color: var(--second-alpha-color);
+}
+
+.bg-second-color {
+  background-color: var(--second-color);
+}
+
+.bg-third-color {
+  background-color: var(--third-color);
+}
+
+.text-first-color {
+  color: var(--first-color);
+}
+
+.text-third-color {
+  color: var(--third-color);
+}

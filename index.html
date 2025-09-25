@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Servicios Técnicos Integrados</title>
+  <meta name="description"
+    content="Con más de quince años de experiencia, tenemos la solución a sus necesidades tecnológicas y de seguridad.   " />
+
+
+
+  <!-- ********** Meta etiquetas para PWA ********** -->
+  <meta name="theme-color" content="#00B1DF" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Servicios Técnicos Integrados" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+
+  <!-- ********** Meta etiquetas para Apple (pantalla de inicio) ********** -->
+  <link rel="apple-touch-startup-image" href="./assets/img/startup-image-750x1334@2x.png"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+
+  <link rel="apple-touch-startup-image" href="./assets/img/startup-image-1125x2436@3x.png"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+
+  <link rel="apple-touch-startup-image" href="./assets/img/startup-image-768x1024@2x.png"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+
+
+
+  <!-- ********** Favicons ********** -->
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/img/favicon-48x48.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/img/favicon-64x64.png" />
+  <link rel="icon" type="image/png" sizes="76x76" href="assets/img/favicon-76x76.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="120x120" href="assets/img/favicon-120x120.png" />
+  <link rel="icon" type="image/png" sizes="144x144" href="assets/img/favicon-144x144.png" />
+  <link rel="icon" type="image/png" sizes="152x152" href="assets/img/favicon-152x152.png" />
+  <link rel="icon" type="image/png" sizes="167x167" href="assets/img/favicon-167x167.png" />
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/img/favicon-180x180.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon-192x192.png" />
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/img/favicon-256x256.png" />
+  <link rel="icon" type="image/png" sizes="384x384" href="assets/img/favicon-384x384.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon-512x512.png" />
+
+  <!-- ********** Apple Touch Icons ********** -->
+  <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/apple-touch-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="167x167" href="./assets/img/apple-touch-icon-167x167.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon-180x180.png" />
+
+
+
+  <!-- ********** Google Fonts ********** -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- ***** CDN de Google Fonts ***** -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@400,700&display=swap" rel="stylesheet" />
+
+
+  <!-- ********** CSS para Bootstrap ********** -->
+  <link href="assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- ********** Bootstrap Icons ********** -->
+  <link rel="stylesheet" href="assets/icons/font/bootstrap-icons.min.css" />
+
+
+  <!-- ********** CSS Externo **********  -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- La clae "navbar-expand-lg" indica a partir de qué tamaño de pantalla la barra de navegación dejará de estar contraída para
+     mostrarse de forma horizontal. En este caso, la barra de navegación se mostrará en tamaño grande a partir del tamaño de pantalla "large" (>=992px). -->
+  <!-- Se aplica la clase "navbar-dark" para que sea legible el texto de la barra de navegación. Si no se coloca, el texto no sería legible. Aplicando esta clase, se asume que la barra tiene un color de fondo oscuro y adecuará el color de fuente más apropiado. -->
+  <!-- La clase "fixed-top" fija la barra de navegación en la parte superior.  -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-second-color">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assets/img/servicios-tecnicos-integrados-logo.png"
+          alt="Imagotipo de la empresa Servicios Técnicos Integrados" width="500" height="500" /></a>
+      <!-- Se le agrega la clase "border-0" al button que tiene asignada la clase "navbar-toggler", para quitarle el borde al menú hamburguesa. -->
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <!-- Para que las opciones de la barra de navegación se muestren a la derecha, se aplicó
+           la clase "ms-lg-auto", la cual se encargará de que en tamaños de pantalla mayores a "Large" (>=992) se asigne todo el márgen disponible (auto) hacia la izquierda, consiguiendo
+           así que las opciones se muestren del lado derecho. -->
+        <ul class="navbar-nav ms-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./">Inicio</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./servicios/">Servicios</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./comencemos/">Forma de trabajo</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto/">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="pt-5 bg-gradient-blue-green">
+    <div class="container">
+      <!-- "align-items-lg-center" esta clase Flexbox (no es necesaria la clase d-flex, porque la clase "row" ya trabaja con Flexbox de forma nativa) centra verticalmente las cards-->
+      <section class="row text-white align-items-lg-center mb-5">
+        <article class="col-12 col-lg-5">
+          <h2>¿Necesita la reparación de equipo de cómputo?</h2>
+          <p class="fs-5">
+            Ofrecemos el mantenimiento y reparación de su equipo de cómputo con los más altos estándares de
+            calidad. Nuestra característica distintiva es que le proporcionamos un servicio garantizado. Nos
+            aseguramos de que su equipo esté en perfectas condiciones para que pueda seguir trabajando sin
+            interrupciones. La honestidad y la calidad de nuestro servicio son nuestra mejor carta de presentación.
+            <a href="#servicios" class="btn btn-success btn-lg fw-bold mt-2">¡Quiero más información!</a>
+        </article>
+        <article class="col-12 col-lg-7">
+          <img class="img-fluid" src="assets/img/dispositivos-portatiles.webp"
+            alt="¿Necesitas un increíble sitio web?" />
+        </article>
+        <!-- La clase "order-lg-1" de flexbox permite controlar el orden en que se mostrarán los elementos en la fila; por defecto, 
+           la clase "order-lg-0" es asignada al primer elemento que se quiero mostrar en la fila. Como en este caso se necesita que en tamaños de pantalla
+           grandes, la imagen (order-lg-0) se muestre antes que el texto, al elemento "article" que contiene el texto, se le asigna el orden "order-lg-1" (se mostrará
+           después de la imagen). -->
+        <article class="col-12 col-lg-5 order-lg-1">
+          <h2>¿Qué otros servicios ofrecemos?</h2>
+          <p class="fs-5">
+          <ul>
+            <li>Mantenimiento y reparación de equipo de cómputo: MAC, Windows, etc. </li>
+
+
+            <li>Reparación de TV.</li>
+            <li>Venta y reparación de impresoras.</li>
+            <li>Mantenimiento, reparación y venta de cámaras de seguridad.</li>
+            <li>Instalación de software en general.</li>
+            <li>Otros servicios...</li>
+          </ul>
+
+          </p>
+        </article>
+        <article class="col-12 col-lg-7">
+          <img class="img-fluid" src="assets/img/reparacion-computadora.webp" alt="Sitios web responsivos" />
+        </article>
+      </section>
+
+      <!-- Por medio de la clase "min-vh-100", se define que la altura mínima de la sección será el 100% del Viewport. -->
+      <!-- "align-items-lg-center" esta clase Flexbox (no es necesaria la clase d-flex, porque la clase "row" ya trabaja con Flexbox de forma nativa) centra verticalmente las  cards-->
+      <section id="servicios" class="row min-vh-100 min-vw-100 align-items-lg-center">
+        <!-- La clase "col-12" especifica que cada etiqueta "article" debe abarcar un máximo de 12 columnas.
+
+          La clase "col-sm-6" significa que el elemento debe ocupar 6 columnas (de un total de 12) cuando la pantalla es del tamaño small (pequeño) o mayor. En Bootstrap, el tamaño small se refiere a pantallas con un ancho mínimo de 576 píxeles. Por lo tanto, en pantallas más pequeñas que small, la clase col-sm-6 no se aplicará y el elemento ocupará el ancho completo (12 columnas).
+
+          La clase "col-lg-3" indica que el elemento debe ocupar 3 columnas (de un total de 12) cuando la pantalla es del tamaño large (grande) o mayor. En Bootstrap, el tamaño large se refiere a pantallas con un ancho mínimo de 992 píxeles. En pantallas más pequeñas que large, la clase col-lg-3 no se aplicará y las clases de tamaños menores se usarán en su lugar.
+           
+          -->
+
+        <!-- IMPORTANTE: cuando se agrega la clase "d-flex", flexbox se asegura de ignorar el ancho que se le haya asignado al elemento. En este caso, 
+           al siguiente div se le asigna de forma predeterminada por Bootstrap un acho de "18rem", por lo que si se no se agregará la clase "d-flex", se seguiría
+           respetando ese ancho, lo que provocaría que en el tamaño "large" se muestren las cuatro cards una justo al lado de la otra sin espacio de por medio. 
+           Al colocarle la clase "d-flex", nos aseguramos de que el ancho de "18rem" se ignore, y que cada card se adapte al tamaño disponible, lo cual
+           permitirá que se vea un espacio de separación entre cada card, viéndose de esta manera más estético.  -->
+        <article class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="card mx-auto mb-3" style="width: 18rem">
+            <!-- La imagen no se distinguirá inicialmente, porque es de color blanco. Luego se modificarán los estilos para que pueda apreciarse correctamente. -->
+            <img src="assets/img/computadora-portatil.webp" class="card-img-top bg-third-color" alt="Nuevo sitio web" />
+            <div class="card-body">
+              <h5 class="card-title">Nuestros servicios</h5>
+              <p class="card-text">
+                Conozca nuestra amplia gama de servicios
+              </p>
+              <a href="./servicios/" class="text-third-color">
+                Más detalles
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- IMPORTANTE: cuando se agrega la clase "d-flex", flexbox se asegura de ignorar el ancho que se le haya asignado al elemento. En este caso, 
+           al siguiente div se le asigna de forma predeterminada por Bootstrap un acho de "18rem", por lo que si se no se agregará la clase "d-flex", se seguiría
+           respetando ese ancho, lo que provocaría que en el tamaño "large" se muestren las cuatro cards una justo al lado de la otra sin espacio de por medio. 
+           Al colocarle la clase "d-flex", nos aseguramos de que el ancho de "18rem" se ignore, y que cada card se adapte al tamaño disponible, lo cual
+           permitirá que se vea un espacio de separación entre cada card, viéndose de esta manera más estético.  -->
+
+
+        <!-- IMPORTANTE: cuando se agrega la clase "d-flex", flexbox se asegura de ignorar el ancho que se le haya asignado al elemento. En este caso, 
+           al siguiente div se le asigna de forma predeterminada por Bootstrap un acho de "18rem", por lo que si se no se agregará la clase "d-flex", se seguiría
+           respetando ese ancho, lo que provocaría que en el tamaño "large" se muestren las cuatro cards una justo al lado de la otra sin espacio de por medio. 
+           Al colocarle la clase "d-flex", nos aseguramos de que el ancho de "18rem" se ignore, y que cada card se adapte al tamaño disponible, lo cual
+           permitirá que se vea un espacio de separación entre cada card, viéndose de esta manera más estético.  -->
+        <article class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="card mx-auto mb-3" style="width: 18rem">
+            <!-- La imagen no se distinguirá inicialmente, porque es de color blanco. Luego se modificarán los estilos para que pueda apreciarse correctamente. -->
+            <img src="assets/img/flujo-trabajo.webp" class="card-img-top bg-third-color" alt="Flujo de trabajo" />
+            <div class="card-body">
+              <h5 class="card-title">Flujo de Trabajo</h5>
+              <p class="card-text">
+                Forma de trabajo desde el primer contacto hasta la entrega final.
+              </p>
+              <a href="./comencemos/" class="text-third-color">
+                Más detalles
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- IMPORTANTE: cuando se agrega la clase "d-flex", flexbox se asegura de ignorar el ancho que se le haya asignado al elemento. En este caso, 
+           al siguiente div se le asigna de forma predeterminada por Bootstrap un acho de "18rem", por lo que si se no se agregará la clase "d-flex", se seguiría
+           respetando ese ancho, lo que provocaría que en el tamaño "large" se muestren las cuatro cards una justo al lado de la otra sin espacio de por medio. 
+           Al colocarle la clase "d-flex", nos aseguramos de que el ancho de "18rem" se ignore, y que cada card se adapte al tamaño disponible, lo cual
+           permitirá que se vea un espacio de separación entre cada card, viéndose de esta manera más estético.  -->
+        <article class="col-12 col-md-6 col-lg-3 d-flex">
+          <div class="card mx-auto mb-3" style="width: 18rem">
+            <!-- La imagen no se distinguirá inicialmente, porque es de color blanco. Luego se modificarán los estilos para que pueda apreciarse correctamente. -->
+            <img src="assets/img/contacto.webp" class="card-img-top bg-third-color" alt="¿Interesado?" />
+            <div class="card-body">
+              <h5 class="card-title">¿Interesado?</h5>
+              <p class="card-text">Contáctenos para dar solución a su problema.</p>
+              <a href="./contacto/" class="text-third-color">
+                Más detalles
+                <i class="bi bi-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <footer class="bg-dark p-3">
+    <div class="container text-center">
+      <!-- Se aplica la propiedad "flex" y se define que el espacio disponible se distribuya entre los elementos.  -->
+      <!-- - space-evenly: Los item flex tendrán un espacio idéntico alrededor de ellos. Mientras que el valor "space-around" asigna al espacio que está antes del primer item, 
+                    y después del último item la MITAD del espacio que hay entre ambos items, el valor "space-evenly" asigna un espacio idéntico
+                    tanto entre los items, como al espacio que se deja antes del primer item y al espacio que se deja después del último item. 
+         -->
+      <nav class="d-flex justify-content-evenly">
+        <!-- Para mostrar los íconos de Bootstrap se debe agregar la clase "bi" y luego el prefijo: "bi-" + nombre de ícono. 
+           Esto es posible, gracias a que se importó la hoja externa de íconos Icon Bootstrap en el encabezado de este sitio web: 
+              <link rel="stylesheet" href="assets/bootstrap/bootstrap-icons.min.css">
+  
+            
+           -->
+        <!-- La clase "fs-3" asigna el tamaño de fuente 3 a cada ícono. -->
+        <!-- <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a> -->
+        <!-- <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x fs-3"></i></a> -->
+        <!-- <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a> -->
+        <!-- <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a> -->
+        <!-- <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a> -->
+
+        <!-- Al colocar el link de messenger precedido de "m.me/user", al dar clic en el ícono no solamente se abrirá Messenger, 
+           si no que se abrirá una conversación con el usuario cuyo nombre se indicó en la URL. -->
+        <!-- <a href="https://m.me/johndoe.com" target="_blank"><i class="bi bi-messenger fs-3"></i></a> -->
+
+        <!-- El link necesario para abrir directamente la ventana de Whatsapp del número indicado es este:
+                  https://api.whatsapp.com/send?phone=50255541414        (el número telefónico se compone de: código de área + número telefónico)
+          -->
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/share/19sCx8U4Dq/" target="_blank">
+          <i class="bi bi-facebook fs-3"></i>
+        </a>
+        <!-- WhatsApp -->
+        <a href="https://wa.me/50254748714?text=Tengo%20una%20consulta%20sobre%20sus%20servicios." target="_blank"><i
+            class="bi bi-whatsapp fs-3"></i></a>
+
+        <!-- Llamadas -->
+        <a href="tel:+50254748714" target="_blank"><i class="bi bi-telephone fs-3"></i></a>
+
+        <!-- Correo Electrónico -->
+        <a href="mailto:serviciostecintegrados@gmail.com?subject=Consulta%20Servicios%20Técnicos%20Integrados"><i
+            class="bi bi-envelope-at fs-3"></i></a>
+      </nav>
+
+      <small class="text-white">&copy; Sitio web desarrollado por: <a href="https://andreiarriaza.github.io"
+          target="blank" rel="noopener"><strong>Andrei Arriaza </strong></a>®. </small>
+      <br>
+      <a href="https://andreiarriaza.github.io" target="blank" rel="noopener"><img src="assets/img/logo-32x32.png"
+          alt="Logo Andrei Arriaza" /></a>
+    </div>
+  </footer>
+
+  <!-- JavaScript para Bootstrap -->
+  <script src="assets/bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

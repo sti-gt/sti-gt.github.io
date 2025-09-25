@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contacto | Servicios Técnicos Integrados</title>
+    <meta name="description"
+        content="Contáctenos para tener más información acerca de nuestros servicios de reparación y mantenimiento de equipo de cómputo. " />
+
+
+
+    <!-- ********** Meta etiquetas para PWA ********** -->
+    <meta name="theme-color" content="#00B1DF" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Servicios Técnicos Integrados" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+
+    <!-- ********** Meta etiquetas para Apple (pantalla de inicio) ********** -->
+    <link rel="apple-touch-startup-image" href="../assets/img/startup-image-750x1334@2x.png"
+        media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" />
+
+    <link rel="apple-touch-startup-image" href="../assets/img/startup-image-1125x2436@3x.png"
+        media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" />
+
+    <link rel="apple-touch-startup-image" href="../assets/img/startup-image-768x1024@2x.png"
+        media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" />
+
+
+
+    <!-- ********** Favicons ********** -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="../assets/img/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="../assets/img/favicon-64x64.png" />
+    <link rel="icon" type="image/png" sizes="76x76" href="../assets/img/favicon-76x76.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/img/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="120x120" href="../assets/img/favicon-120x120.png" />
+    <link rel="icon" type="image/png" sizes="144x144" href="../assets/img/favicon-144x144.png" />
+    <link rel="icon" type="image/png" sizes="152x152" href="../assets/img/favicon-152x152.png" />
+    <link rel="icon" type="image/png" sizes="167x167" href="../assets/img/favicon-167x167.png" />
+    <link rel="icon" type="image/png" sizes="180x180" href="../assets/img/favicon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/img/favicon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="256x256" href="../assets/img/favicon-256x256.png" />
+    <link rel="icon" type="image/png" sizes="384x384" href="../assets/img/favicon-384x384.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/img/favicon-512x512.png" />
+
+    <!-- ********** Apple Touch Icons ********** -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/img/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/img/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/img/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/img/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="../assets/img/apple-touch-icon-167x167.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180x180.png" />
+
+
+
+    <!-- ********** Google Fonts ********** -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" />
+
+    <!-- ***** CDN de Google Fonts ***** -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@400,700&display=swap" rel="stylesheet" />
+
+
+    <!-- ********** CSS para Bootstrap ********** -->
+    <link href="../assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- ********** Bootstrap Icons ********** -->
+    <link rel="stylesheet" href="../assets/icons/font/bootstrap-icons.min.css" />
+
+
+    <!-- ********** CSS Externo **********  -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+</head>
+
+<body>
+    <!-- La clae "navbar-expand-lg" indica a partir de qué tamaño de pantalla la barra de navegación dejará de estar contraída para
+         mostrarse de forma horizontal. En este caso, la barra de navegación se mostrará en tamaño grande a partir del tamaño de pantalla "large" (>=992px). -->
+    <!-- Se aplica la clase "navbar-dark" para que sea legible el texto de la barra de navegación. Si no se coloca, el texto no sería legible. Aplicando esta clase, se asume que la barra tiene un color de fondo oscuro y adecuará el color de fuente más apropiado. -->
+    <!-- La clase "fixed-top" fija la barra de navegación en la parte superior.  -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-second-color">
+        <div class="container">
+            <!-- 
+                  Es necesario recordar que es recomendable agregar siempre los atributos width y height a las imágenes, para que el navegador pueda reservar el espacio necesario para la imagen antes de que esta se cargue.
+        
+                  IMPORTANTE: en los atributos "width" y "height" se debe colocar el tamaño original de la imagen, no el tamaño en el que se desea que se muestre la imagen.
+        
+                  A continuación se explica el porqué de esta recomendación:
+        
+                      1. Reserva de espacio (layout inicial)
+                              - El navegador ve el HTML y, antes de descargar la imagen, necesita reservar un hueco en la página para evitar saltos de contenido.
+                              - Para eso usa los atributos width="ANCHO_ORIGINAL" y height="ALTO_ORIGINAL" de la imagen.
+        
+                                      Ejemplo: supongamos que la imagen tiene un tamaño original de 1200×600px; en ese caso, los atributos "width" y "height" quedarían 
+                                                exactamente con esos valores que tiene la imagen originalmente.
+        
+                                                  <img src="logo.png" alt="Logo" width="1200" height="600">
+        
+                              - Con eso el navegador ya sabe que tiene que reservar un rectángulo con esa proporción 2:1.
+        
+                      2. Renderizado final (tamaño visible)
+                              - Una vez reservado el espacio y cargada la imagen, entra en juego el CSS.
+                              - En tu CSS tienes:
+        
+                                  .navbar-brand img {
+                                      width: 8rem;    /* ancho que tú quieres realmente ver */
+                                      height: auto;   /* “auto” recalcula la altura según la proporción 2:1 */
+                                  }
+                              - Este CSS SOBREESCRIBE el ancho y alto que pusiste en el HTML para el render final:
+                                  - El ancho real será 8 rem (por ejemplo, 128 px si 1 rem = 16 px).
+                                  - La altura se calcula automáticamente para mantener la proporción original (en este caso, te da 64px).
+        
+                      ¿Por qué esta diferencia de tamaños en HTML (atributos "width" y "height") y en cSS (propiedades "width" y "height") no generan conflictos entre sí?
+                          - HTML (width/height) solo define proporción y espacio inicial para evitar saltos al cargar.
+                          - CSS define el tamaño real que verá el usuario, y tiene prioridad sobre los atributos HTML.
+        
+                      
+                      El navegador combina ambos sin conflicto: reserva según HTML, muestra según CSS.
+        
+                      Acá hay otra manera de entenderlo: 
+        
+                          1. Atributos HTML (width/height)
+                      
+                                  - Sirven para definir las dimensiones intrínsecas de la imagen (sus píxeles reales).
+                                  - El navegador usa esos valores antes de descargar la imagen para reservar espacio en el layout (evita CLS).
+                                      ¿Qué es CLS? 
+                                          Cambio de Diseño Acumulativo (Cumulative Layout Shift, en inglés). Es una métrica que mide la estabilidad visual de una
+                                          página web durante su carga. En esencia, CLS cuantifica cuánto se mueven inesperadamente los elementos de una página a
+                                          medida que se carga. Un CLS alto indica una página inestable, lo que puede ser frustrante para el usuario y afectar
+                                          negativamente la experiencia general.
+                                  - No son una orden de “renderizado final”, sino una pista de proporción y tamaño inicial.
+                      
+                          2. Reglas CSS (.navbar-brand img { width: 8rem; height: auto; })
+                      
+                                  - Tienen mayor prioridad sobre los atributos HTML para el tamaño final del elemento.
+                                  - Cuando en CSS fijas width: 8rem, ese será el ancho real de la imagen en la página, independientemente de lo que diga el atributo width en el HTML.
+                                  - height: auto -> simplemente recalcula la altura respetando la relación de aspecto que el navegador dedujo de los atributos
+                                                    HTML (o de la propia imagen).
+                                  
+                      
+                          ¿Qué pasa al combinar ambos?
+                      
+                              - Antes de cargar la imagen, el navegador ve width="1200" y height="600" y reserva un rectángulo 1200×600px (o su
+                                equivalente en el contexto).
+                              - Al renderizar, aplica tu CSS:
+                                  - Se escala a 8 rem de ancho.
+                                  - Calcula la altura proporcional (p. ej. 4 rem si la ratio es 2:1).
+                                  - El usuario solo ve la imagen en 8 rem × “alto calculado”, nunca en 1200×600 px.
+                  
+                  
+              -->
+            <a class="navbar-brand" href="../"><img src="../assets/img/servicios-tecnicos-integrados-logo.png"
+                    alt="Imagotipo de la empresa Servicios Técnicos Integrados" width="500" height="500" /></a>
+            <!-- Se le agrega la clase "border-0" al button que tiene asignada la clase "navbar-toggler", para quitarle el borde al menú hamburguesa. -->
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- Para que las opciones de la barra de navegación se muestren a la derecha, se aplicó
+               la clase "ms-lg-auto", la cual se encargará de que en tamaños de pantalla mayores a "Large" (>=992) se asigne todo el márgen disponible (auto) hacia la izquierda, consiguiendo
+               así que las opciones se muestren del lado derecho. -->
+                <ul class="navbar-nav ms-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../servicios/">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../comencemos/">Forma de Trabajo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="pt-5 bg-color">
+        <div class="container mb-5">
+            <section class="row">
+                <!-- La primera etiqueta "article" abarcará las 12 columnas del grid de Bootstrap
+           en todos los tamaños de pantalla. -->
+                <article class="col-12 text-center">
+                    <h1>¿Interesado?</h1>
+                    <p class="fs-5">¡Escríbame y resuelvo sus dudas acerca de nuestros servicios!</p>
+                    <p class="fs-5">
+                        Para más información, puedes contactarme en
+                        <a href="mailto:serviciostecintegrados@gmail.com">serviciostecintegrados@gmail.com</a>.
+                    </p>
+                </article>
+                <!-- En tamaños de pantalla "large" o mayores )col-lg-6), cada etiqueta "article" abarcará
+           6 columnas, y en tamaños menores a "large" (col-12), cada elemento abarcará 12 columnas. -->
+                <!-- La clase "order-lg-1" de flexbox permite controlar el orden en que se mostrarán los elementos en la fila; por defecto, 
+           la clase "order-lg-0" es asignada al primer elemento que se quiero mostrar en la fila. Como en este caso se necesita que en tamaños de pantalla
+           grandes, el mapa (order-lg-0) se muestre antes que el formulario, al elemento "article" que contiene el formulario, se le asigna el orden "order-lg-1" (se mostrará después del mapa). -->
+                <article class="col-12 col-lg-6 order-lg-1">
+                    <!-- Para el envío de formulario, se utilizará el sitio web https://formsubmit.co/
+             
+            1. Se agregan al formulario los siguientes atributos: 
+                      action="https://formsubmit.co/your@email.com" method="POST"
+
+            2. Se agrega el correo electrónico al que se desea que lleguen los mensajes del sitio web: 
+                      action="https://formsubmit.co/andreiarriaza@email.com" method="POST"
+
+            3. Es primordial saber que para que los datos de cada campo se envíen correctamente, cada campo tiene que tener asignado el atributo "name".
+            4. En el sitio web oficial de Form Submit, hay funcionalidades (en la sección de "docs") extra que se pueden agregar; 
+               en este caso, se usará la funcionalidad "_next" (la cual agrega un input de tipo "hidden"),
+               la cual permite redirigir al usuario, una vez se haya enviado el mensaje, hacia una página en la que se agradece al usuario por haberse comunicado
+               por ese medio. El input que se agrega, es el siguiente:
+
+                      <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+
+
+            5. También se agregará la funcionalidad de "Subject", de Form Submit, la cual permite agregar un asunto de forma automática a cada mensaje que se envíe mediante
+               la plataforma:
+
+                      <input type="hidden" name="_subject" value="New submission!">
+            -->
+                    <form action="https://formsubmit.co/serviciostecintegrados@gmail.com" method="POST"
+                        class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre:</label>
+                            <input class="form-control" id="name" name="name" placeholder="Escriba su nombre"
+                                type="text" required />
+
+                            <!-- <div class="valid-feedback">¡Datos correctos!</div> -->
+                            <div class="invalid-feedback">
+                                Por favor, escriba su nombre .
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email:</label>
+
+                            <!-- Dominio: Es el nombre que se utiliza para identificar un sitio web. Por ejemplo, en example.com, "example" es el nombre del dominio.
+
+          TLD (Top-Level Domain/Dominio de Nivel Superior): Se refiere a la parte final de un nombre de dominio, que generalmente 
+          indica el tipo de organización o el país de origen. En el ejemplo example.com, el TLD es ".com". 
+          Otros ejemplos de TLD son ".org", ".net", ".edu" (para instituciones educativas), y ".es" (para España). 
+      -->
+                            <!-- Expresión Regular del atributo pattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$":
+                
+
+            Ahora, te explico cada parte del patrón:
+
+              1. ^  
+                  Significado: Indica el inicio de la cadena. Asegura que la validación comience desde el principio del texto.
+              2. [a-zA-Z0-9._%+-]+
+                    Significado: Esta parte describe la parte local del correo (es decir, lo que va antes del símbolo @).
+                        Detalles:
+                          a-z: Permite cualquier letra minúscula.
+                          A-Z: Permite cualquier letra mayúscula.
+                          0-9: Permite cualquier dígito (número del 0 al 9).
+                          ._%+-: Permite los caracteres especiales punto (.), guion bajo (_), porcentaje (%), signo más (+) y guion (-).
+                          Nota: Estos son caracteres permitidos en la parte local de un correo electrónico según las especificaciones.
+                          El signo + al final de este grupo indica que la parte local debe contener al menos un carácter y puede repetirse.
+            3. @
+                  Significado: Literalmente el símbolo @ que separa la parte local del dominio en un correo electrónico.
+            4. [a-zA-Z0-9.-]+
+                  Significado: Esta parte describe la parte del dominio (lo que va después del @).
+                    Detalles:
+                      a-z: Permite cualquier letra minúscula.
+                      A-Z: Permite cualquier letra mayúscula.
+                      0-9: Permite cualquier dígito (número del 0 al 9).
+                      .-: Permite los caracteres especiales punto (.) y guion (-).
+                      El signo + al final indica que el dominio debe contener al menos un carácter y puede repetirse.
+            5. \.[a-zA-Z]{2,}
+                  Significado: Esta parte valida el dominio de nivel superior (TLD), como .com, .org, .net, etc.
+                    Detalles:
+                    
+                      \.: El punto literal que separa el nombre del dominio del TLD.
+                      [a-zA-Z]: Permite únicamente letras (minúsculas o mayúsculas) en el TLD.
+                      {2,}: Indica que debe haber al menos dos letras después del punto, lo que es común en los dominios de nivel superior (.com, .net, .info, etc.). Este valor puede crecer para soportar TLDs (Domain Level Top) más largos como .museum.
+            6. $
+                  Significado: Indica el final de la cadena. Asegura que no haya más caracteres después del TLD y que el correo termine aquí.
+            
+            Resumen
+              Este patrón asegura que un correo electrónico tenga:
+
+                - Parte local (antes del @) que contiene letras, dígitos y ciertos caracteres especiales (._%+-).
+                - El símbolo @ que separa la parte local del dominio.
+                - Parte del dominio (después del @), que incluye letras, dígitos, puntos y guiones.
+                - Un dominio de nivel superior (TLD) que debe ser de al menos dos letras (como .com o .org).
+            
+              Ejemplos de correos válidos:
+                usuario@example.com
+                user.name123@sub-domain.domain.org
+                usuario+123@correo.com
+
+              Ejemplos de correos inválidos:
+                usuario@com (el TLD no puede tener menos de 2 letras)
+                usuario@domain. (falta el TLD)
+                usuario@@example.com (doble @)
+                usuario@.com (el dominio no puede empezar con un punto)
+            -->
+                            <input class="form-control" id="email" name="email" placeholder="Escriba su email"
+                                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" type="email" required />
+                            <!-- <div class="valid-feedback">¡Datos correctos!</div> -->
+                            <div class="invalid-feedback">
+                                Por favor, escriba su correo electrónico .
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label" for="comments">Comentarios:</label>
+                            <!-- La propiedad "resize:none", impide el cambio de tamaño del textarea.  -->
+                            <textarea class="form-control" id="comments" name="comments"
+                                placeholder="Deje sus comentarios" required style="resize: none"></textarea>
+
+                            <!-- <div class="valid-feedback">¡Datos correctos!</div> -->
+                            <div class="invalid-feedback">
+                                Por favor, escriba un comentario .
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input class="btn btn-lg btn-success" type="submit" />
+
+                            <!-- Este input de tipo "hidden" es proporcionado por Form Submit, para que, una vez enviado el mensaje, redirija al usuario a una página
+                 para agradecerle por su comunicación. En este caso, 
+                 redirigirá al usuario a la página "gracias.html". -->
+
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/contacto/gracias.html" />
+
+                            <!--  Asunto del mensaje que se enviará mediante "Form Submit".-->
+                            <input type="hidden" name="_subject"
+                                value="Comentario del sitio web: Servicios Técnicos Integrados" />
+                        </div>
+                    </form>
+                </article>
+                <!-- En la sección "Helpers", y en la categoría "Ratio", se encuentra el apartado "Aspect ratios", la cual permite controlar la relación de aspecto de un elemento.  En este ejemplo, se usará la relación de aspecto "16X9". -->
+                <article class="col-12 col-lg-6">
+                    <div class="ratio ratio-16x9">
+                        <!-- iframe de Google Maps -->
+                        <img src="../assets/img/contacto/contact-image.jpg" class="img-fluid" width="580" height="400"
+                            alt="imagen ">
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- ********** Carrusel ********** -->
+        <!-- El carrusel que se agregó, se encuentra dentro de la sección "Components", en la categoría "Carousel", dentro del apartado "Captions". 
+        
+       El carrusel original se modificará, pues no se desea que tenga los botones que se muestran en la parte central del carrusel.
+       
+       1. Se eliminan los siguientes botones: 
+       
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        
+
+        2. Se quitan todos los "caption" de las imágenes, excepto el de la primera. 
+
+          Se cambia de lugar el "div" del caption que está asignado a la 
+          imagen "about-1" (el caption que
+          en el paso anterior, no se eliminó), y se agrega después del "div" que tiene
+          asignada la clase "carousel-inner". También se eliminan las clases "d-none" y "d-md-block" del caption: 
+
+             <div class="carousel-caption">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+
+        3. Se le asigna un color de fondo al caption, mediante la clase "bg-second-alpha-color"
+
+        4. Se mofificará la clase "carousel-caption", porque, si no se realiza esta modificación,
+        el caption no será visible. Esto se hace en la hoja externa de CSS, en la cual
+        se agrega lo siguiente: 
+
+          .carousel-caption {
+              z-index: 1;
+
+          }
+            
+            
+        -->
+        <!-- 
+        Los atributos "data-bs-ride" y "data-bs-interval" permiten que el carrusel se deslice de forma automática, y el 
+        intervalo de tiempo (en milisegundos) que habrá entre cada deslizamiento. En este caso, el carrusel 
+        se deslizará cada 3 segundos (3000 milisegundos).
+        Si no se colocan estos atributos, el carrusel solo se deslizará cuando el usuario dé clic en los 
+        botones de navegación (anterior y siguiente).
+         -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-caption bg-second-alpha-color">
+                    <article>
+                        <aside>
+                            <p class="fs-4"><b>Servicios Técnicos Integrados</b></p>
+                            <p class="fs-5 d-none d-sm-block">Reparación, mantenimiento e isntalación de equipo</p>
+                        </aside>
+                        <!-- En tamaños de pantalla más pequeños que "medium", el texto quedará oculto, y solo se mostrará en tamaños de pantalla "medium" o mayores (d-md-block). -->
+                        <aside class="d-none d-md-block">
+                            <p>Con más de quince años de experiencia, tenemos la solución a sus necesidades tecnológicas
+                                y de seguridad.</p>
+                            <p>
+                                Servicios <em><b>confiables y garantizados</b></em>.
+                            </p>
+                            <p>Contamos con servicio a domicilio.</p>
+                        </aside>
+                    </article>
+                </div>
+
+                <div class="carousel-item active">
+                    <div class="ratio ratio-16x9">
+                        <img src="../assets/img/contacto/about-1.jpg" class="d-block w-100" alt="Acerca 1" width="1200"
+                            height="800" />
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                        <img src="../assets/img/contacto/about-2.jpg" class="d-block w-100" alt="Acerca 2" width="1200"
+                            height="800" />
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                        <img src="../assets/img/contacto/about-3.jpg" class="d-block w-100" alt="Acerca 3" width="1200"
+                            height="800" />
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="ratio ratio-16x9">
+                        <img src="../assets/img/contacto/about-4.jpg" class="d-block w-100" alt="Acerca 4" width="1200"
+                            height="800" />
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- ********** FIN Carrusel ********** -->
+    </main>
+
+    <footer class="bg-dark p-3">
+        <div class="container text-center">
+            <!-- Se aplica la propiedad "flex" y se define que el espacio disponible se distribuya entre los elementos.  -->
+            <!-- - space-evenly: Los item flex tendrán un espacio idéntico alrededor de ellos. Mientras que el valor "space-around" asigna al espacio que está antes del primer item, 
+                    y después del último item la MITAD del espacio que hay entre ambos items, el valor "space-evenly" asigna un espacio idéntico
+                    tanto entre los items, como al espacio que se deja antes del primer item y al espacio que se deja después del último item. 
+         -->
+            <nav class="d-flex justify-content-evenly">
+                <!-- Para mostrar los íconos de Bootstrap se debe agregar la clase "bi" y luego el prefijo: "bi-" + nombre de ícono. 
+                       Esto es posible, gracias a que se importó la hoja externa de íconos Icon Bootstrap en el encabezado de este sitio web: 
+                          <link rel="stylesheet" href="assets/bootstrap/bootstrap-icons.min.css">
+              
+                        
+                       -->
+                <!-- La clase "fs-3" asigna el tamaño de fuente 3 a cada ícono. -->
+                <!-- <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook fs-3"></i></a> -->
+                <!-- <a href="https://twitter.com" target="_blank"><i class="bi bi-twitter-x fs-3"></i></a> -->
+                <!-- <a href="https://github.com" target="_blank"><i class="bi bi-github fs-3"></i></a> -->
+                <!-- <a href="https://youtube.com" target="_blank"><i class="bi bi-youtube fs-3"></i></a> -->
+                <!-- <a href="https://instagram.com" target="_blank"><i class="bi bi-instagram fs-3"></i></a> -->
+
+                <!-- Al colocar el link de messenger precedido de "m.me/user", al dar clic en el ícono no solamente se abrirá Messenger, 
+                       si no que se abrirá una conversación con el usuario cuyo nombre se indicó en la URL. -->
+                <!-- <a href="https://m.me/johndoe.com" target="_blank"><i class="bi bi-messenger fs-3"></i></a> -->
+
+                <!-- El link necesario para abrir directamente la ventana de Whatsapp del número indicado es este:
+                              https://api.whatsapp.com/send?phone=50255541414        (el número telefónico se compone de: código de área + número telefónico)
+                      -->
+
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/share/19sCx8U4Dq/" target="_blank">
+                    <i class="bi bi-facebook fs-3"></i>
+                </a>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/50254748714?text=Tengo%20una%20consulta%20sobre%20sus%20servicios."
+                    target="_blank"><i class="bi bi-whatsapp fs-3"></i></a>
+
+                <!-- Llamadas -->
+                <a href="tel:+50254748714" target="_blank"><i class="bi bi-telephone fs-3"></i></a>
+
+                <!-- Correo Electrónico -->
+                <a href="mailto:serviciostecintegrados@gmail.com?subject=Consulta%20Servicios%20Técnicos%20Integrados"><i
+                        class="bi bi-envelope-at fs-3"></i></a>
+            </nav>
+
+            <small class="text-white">&copy; Sitio web desarrollado por: <a href="https://andreiarriaza.github.io"
+                    target="blank" rel="noopener"><strong>Andrei Arriaza </strong></a>®. </small>
+            <br>
+            <a href="https://andreiarriaza.github.io" target="blank" rel="noopener"><img
+                    src="../assets/img/logo-32x32.png" alt="Logo Andrei Arriaza" /></a>
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript para Bootstrap -->
+    <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
+
+    <!-- Javascript externo para mostrar mensajes de validación de formularios -->
+    <script src="../assets/js/main.js"></script>
+
+
+</body>
+
+</html>
