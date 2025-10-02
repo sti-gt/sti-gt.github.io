@@ -93,17 +93,23 @@ debajo de las imágenes. */
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23d90062'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
-/* Modificar únicamente la altura de los contenedores e imágenes del carrusel que se encuentra en la página de "Servicios" con el id "carouselService". */
+/* Modificar únicamente la altura de los contenedores e imágenes del carrusel que se encuentra en la página de "Servicios" con el id "carousel-service". */
 
-#carouselService .carousel-inner {
-  height: 85vh;
+/* Estos estilos se aplican, para que, cuando el tamaño de pantalla sea igual a 992px o mayor, se asigne al carrusel
+una altura de "85vh". Para tamaños de pantalla menores, como los smartphones ,se dejará la altura por defecto asignada por Bootstrap.s */
+@media (min-width: 992px) {
+  #carousel-service .carousel-inner {
+    height: 85vh;
+  }
 }
 
-#carouselService .carousel-item {
+
+
+#carousel-service .carousel-item {
   height: 100%;
 }
 
-#carouselService .carousel-item img {
+#carousel-service .carousel-item img {
   height: 100%;
   /* 
   IMPORTANTE: 
@@ -132,7 +138,7 @@ los submenú del menú "sitios". */
 .navbar-brand img {
   /* Se asigna el valor "width: auto" para que la imagen mantenga su relación de aspecto y no se deforme.  */
   width: auto;
-  height: 8rem;
+  height: 6rem;
 }
 
 /* El elemento que tiene asignada la clase "navbar-toggler", es el que contiene el menú hamburguesa.  */
@@ -254,8 +260,8 @@ como color de fondo de cada elemento (nav-item). */
 }
 
 .bg-hero-image {
-  /* IMPORTANTE: la variable "--bg-image" no se encuentra declarada en este archivo de CSS, como todas las demás, si no que se declara dentro del atributo "style" de la sección "Single Page" del archivo "sitios.html". La razón de hacerlo así es que,
-    este mismo selector, será usado por las secciones "Single Page" y "Multi Page", y se necesita una imagen distinta para cada una. Si la variable "--bg-image" se declará
+  /* IMPORTANTE: la variable "--bg-image" no se encuentra declarada en este archivo de CSS, como todas las demás, si no que se declara dentro del atributo "style" de la sección "repair-pc" del archivo "sitios.html". La razón de hacerlo así es que,
+    este mismo selector, será usado por las secciones "repair-pc" y "sales", y se necesita una imagen distinta para cada una. Si la variable "--bg-image" se declará
     dentro de este archivo CSS, como se hizo con el resto de variables, sería necesario crear un selector para la sección de "Sigle Page" con su respectiva variable, y otro
     selector para la sección "Multi Page", con su respectiva variable. Para evitar esto, la
     variable "--bg-image" se declara dentro de los atributos "style" de cada sección. ,

@@ -59,6 +59,231 @@
     <link rel="apple-touch-icon" sizes="167x167" href="../assets/img/apple-touch-icon-167x167.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon-180x180.png" />
 
+    <!-- **************** Etiquetas Open Graph (Facebook, LinkedIn, etc.) **************** -->
+
+
+    <!-- Título que se mostrará en las redes sociales al compartir. Máximo: 90 caracteres.  -->
+    <meta property="og:title" content="Servicios Técnicos Integrados - Servicios" />
+
+    <!-- La etiqueta "description" debe incluir una o dos oraciones para describir el sitio. Máximo recomendado: 150 caracteres.-->
+    <meta property="og:description"
+        content="Con más de quince años de experiencia, tenemos la solución a sus necesidades tecnológicas y de seguridad." />
+
+
+
+    <meta property="og:type" content="website" />
+
+    <!-- La etiqueta Open Graph og:url especifica la URL canónica de la página web que estás compartiendo. Esto ayuda a las redes sociales y otras plataformas a identificar correctamente la página de origen y asegurarse de que el contenido compartido apunte a la URL correcta.
+            
+            ¿Por qué es importante?
+              - Evitar duplicados de URL:
+            
+              - Si tu página tiene varias URLs que conducen al mismo contenido (por ejemplo, con 
+                parámetros como ?utm_source=facebook), esta etiqueta asegura que todas las versiones 
+                compartidas apunten a la URL principal o canónica.
+              - Esto ayuda a consolidar el tráfico y mejorar el SEO al evitar duplicados.
+            
+            Compatibilidad con redes sociales:
+              - Las redes sociales usan esta etiqueta para enlazar el contenido al compartirlo. Si no se 
+                define, algunas plataformas podrían usar una URL incorrecta o mal estructurada.
+              - Control del contenido compartido:
+            
+              Si el contenido cambia de URL (por redirecciones, parámetros o cambios en la estructura del sitio), puedes definir una URL estática para que siempre sea la misma, sin importar desde dónde se comparta. 
+              
+              -->
+
+    <meta property="og:url" content="https://sti-gt.github.io/servicios/" />
+
+
+
+
+    <!-- La propiedad "og:image" debe encontrarse antes que las propiedades "og:width" y "og:width" que la modifican. 
+                      En este caso, primero está la etiqueta: 
+                          <meta property="og:image" content="assets/img/logoOpenGraph.png" />
+                      Y luego las etiquetas: 
+                          <meta property="og:image:width" content="1200" />
+                          <meta property="og:image:height" content="630" />
+                          <meta property="og:image:alt" content="Ejemplo" />
+                      De esta manera, se asignará a la imagen "logoOpenGraph" el tamaño de "1200*630.
+              
+                      Si se fueran a agregar varias imágenes, es posible hacerlo, siguiendo la misma pauta. 
+                      
+                      Por ejemplo:
+                        <meta property="og:image" content="https://example.com/rock.jpg" />
+                        <meta property="og:image:width" content="300" />
+                        <meta property="og:image:height" content="300" />
+                        <meta property="og:image:alt" content="Ejemplo" />
+                        <meta property="og:image" content="https://example.com/rock2.jpg" />
+                        <meta property="og:image" content="https://example.com/rock3.jpg" />
+                        <meta property="og:image:height" content="1000" />
+              
+                        Significa que hay 3 imágenes en esta página, la primera imagen (rock) es 300x300, la del medio (rock2) tiene dimensiones no especificadas 
+                        y la última (rock3) mide 1000px de alto.
+            
+            
+                  El tamaño recomendado para la imagen es de 1200 píxeles de ancho por 630 píxeles de alto.
+              
+                  -->
+
+
+    <!-- IMPORTANTE: 
+                              Tamaño recomendado
+                                Dimensiones ideales: 1200 x 630 píxeles
+                                  Esto garantiza que la imagen se vea nítida y correctamente ajustada en la mayoría de las plataformas.
+                  
+                              Relación de aspecto: 1.91:1
+                                Mantén esta proporción para evitar que la imagen se recorte de forma incorrecta.
+                  
+                              Tamaño de archivo:
+                                Máximo recomendado: 5 MB
+                            
+                            Otros tamaños aceptables
+                              Si no puedes usar las dimensiones ideales, estos tamaños también son adecuados:
+                  
+                                - 1080 x 566 píxeles: Proporción de 1.91:1 con menor resolución.
+                                - 600 x 315 píxeles: Resolución mínima aceptada por Facebook.
+                          
+                          
+                          
+                          
+                          
+                          -->
+
+
+
+    <!-- Se recomienda que la propiedad "og:image" contenga una URL absoluta, como: 
+                      
+                        https://example.com/assets/img/opengraph-image.jpg 
+              
+                      En este ejemplo, se dejó una URL relativa, pero solo porque este repositorio no es una página web real.
+                      En un sitio web real, se debe usar una URL absoluta para que la imagen se muestre correctamente en las redes sociales.
+                 
+                -->
+    <meta property="og:image" content="https://sti-gt.github.io/assets/img/open-graph-image.webp" />
+
+    <!-- Permite definir el ancho de la imagen "OpenGraph" que se mostrará en redes sociales
+                    gracias a la propiedad "og:image" que se vio justo arriba. El tamaño recomendado es de 1200 pixeles de ancho. -->
+    <meta property="og:image:width" content="1200" />
+
+    <!-- Permite definir la altura de la imagen "OpenGraph" que se mostrará en redes sociales
+                    gracias a la propiedad "og:image" que se vio justo arriba. El tamaño recomendado es de 630 pixeles de alto. -->
+    <meta property="og:image:height" content="630" />
+
+    <!--  Texto alternativo para la imagen, útil para accesibilidad y SEO. -->
+    <meta property="og:image:alt" content="Imagen descriptiva de Servicios Técnicos Integrados." />
+
+
+    <meta property="og:site_name" content="Servicios Técnicos Integrados" />
+
+
+    <meta property="og:locale" content="es_GT" />
+
+
+    <!-- **************** FIN Etiquetas Open Graph (Facebook, LinkedIn, etc.) **************** -->
+
+
+    <!-- **************** Etiquetas para Twitter: Twitter Cards **************** -->
+
+
+
+
+
+    <!-- 
+                El atributo twitter:card especifica el tipo de tarjeta que Twitter utiliza al compartir un enlace de tu sitio web. 
+                Twitter admite varios valores para este atributo, cada uno diseñado para diferentes tipos de contenido. Aquí tienes los valores admitidos y su propósito:
+                 	- summary
+                  - summary_large_image
+                  - app 
+                  - player
+            
+            
+                
+                -->
+
+    <!-- 
+                
+                
+                 
+              -->
+    <!-- ******************** Twitter Card de Tipo "summary" ********************  -->
+
+    <!-- 
+                    1. summary
+                          Descripción: La tarjeta más básica. Incluye:
+                              - Título
+                              - Descripción
+                              - URL
+                              - Imagen pequeña (opcional).
+                          Uso: Ideal para contenido como artículos, productos, restaurantes, empresas, blogs o páginas con información breve.
+            
+                          
+                        twitter:tittle: 
+                          En las tarjetas de Twitter, los títulos más largos pueden ser truncados, especialmente en dispositivos móviles, por lo que se 
+                          recomienda mantenerlo en un rango de 60-70 caracteres.
+            
+                        twitter:description 
+                          El contenido de la descripción debe ser breve, claro y dentro del límite recomendado por Twitter.
+                          Aunque Twitter soporta hasta 200 caracteres, se recomienda no exceder los 160 caracteres para evitar truncamientos.
+                          IMPORTANTE: La tarjeta está centrada en la imagen. Cuando usas una tarjeta summary_large_image (que incluye una imagen grande), 
+                          Twitter podría priorizar la visualización de la imagen por encima del texto, especialmente si la imagen es de alta calidad y 
+                          lo suficientemente representativa del contenido. Si Twitter considera que la imagen es lo suficientemente atractiva, puede omitir 
+                          mostrar la descripción. 
+            
+                          Tamaño máximo de caracteres para la descripción: 200 caracteres.
+                          Tamaño máximo recomendado para evitar truncamientos: 160 caracteres.
+                      
+                        twitter:image 
+                          Relación de aspecto: 1:1 (cuadrada).
+                          Tamaño Mínimo: 144*144 pixeles. 
+                          Tamaño Máximo: 4096x4096 píxeles.
+                          Tamaño recomendado: 1200x1200 píxeles.
+                          Peso máximo: 5 MB.
+            
+            
+                          twitter:image:alt
+                            Máximo 420 caracteres. 
+            
+                            
+            
+            
+                  Ejemplo:              
+                    <meta name="twitter:card" content="summary" />
+                    <meta name="twitter:site" content="@tu_usuario_twitter" /> --- opcional --
+                      <meta name="twitter:creator" content="@AutorDelContenido" /> --- opcional --
+                    <meta name="twitter:title" content="Bienvenidos a mi Blog de Desarrollo Web" />
+                    <meta name="twitter:description" content="Encuentra artículos y tutoriales para aprender sobre desarrollo web, programación y mejores prácticas." /> -- opcional --
+                    <meta name="twitter:image" content="https://example.com/images/miniatura.jpg" /> -- opcional --
+                    <meta name="twitter:image:alt" content="Texto alternativo" /> -- opcional -- 
+                    
+                -->
+
+
+
+    <!-- Tipo de Card (obligatorio) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Cuenta de Twitter del sitio (opcional, recomendado) -->
+    <!-- <meta name="twitter:site" content="@andreiarriaza"> -->
+
+    <!-- Cuenta del autor/creador del sitio (opcional) -->
+    <meta name="twitter:creator" content="@andrei_arriaza">
+    <!-- Título del contenido (obligatorio, máx. 70 caracteres) -->
+    <meta name="twitter:title" content="Servicios Técnicos Integrados - Servicios">
+    <!-- Descripción breve (opcional, máx. 160 caracteres para que no se trunque (aunque soporta un máximo de 200 caracteres)) -->
+    <meta name="twitter:description"
+        content="Con más de quince años de experiencia, tenemos la solución a sus necesidades tecnológicas y de seguridad.">
+
+    <!-- Imagen (opcional) -->
+
+    <!-- IMPORTANTE:  En las Twitter Cards, a diferencia de las etiquetas "OpenGraph", no existen las propiedades "twitter:image:width" y "twitter:image:height". -->
+
+    <!-- Este link es solo de referencia, para ejemplificar que siempre se deben utilizar rutas absolutas y no relativas.  -->
+    <meta name="twitter:image" content="https://sti-gt.github.io/assets/img/twitter-card-image.webp">
+    <!-- Texto alternativo para la imagen (opcional, máx. 420 caracteres) -->
+    <meta name="twitter:image:alt" content="Imagen descriptiva de Servicios Técnicos Integrados.">
+
+
+    <!-- **************** FIN Etiquetas para Twitte: Twitter Cards **************** -->
+
 
 
     <!-- ********** Google Fonts ********** -->
@@ -199,7 +424,7 @@
                     Reparación y mantenimiento de equipo de cómputo y accesorios.
                 </p>
 
-                <div id="carouselService" class="carousel slide">
+                <div id="carousel-service" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../assets/img/servicios/services-1.webp" class="d-block w-100"
@@ -241,12 +466,12 @@
                                 alt="Trabajo 11" />
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselService"
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel-service"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselService"
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel-service"
                         data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
@@ -257,11 +482,11 @@
 
         <!-- IMPORTANTE: cuando se declara la Hero Image mediante el atributo "style", se debe asignar una URL
      relativa tomando como referencia el archivo CSS externo y NO el archivo "sitios.html"; es decir, que, como en este caso, el archivo de CSS está dentro de la carpeta "assets/css", se usó la siguiente URL para acceder
-     a la imagen respectiva "../images/site-singlepage.jpg"
+     a la imagen respectiva "../assets/img/repair-pc.webp"
      con lo cual se indica que la imagen se encuentra un nivel arriba de donde se encuentra el archivo de CSS externo, 
      y que se halla dentro de la carpeta "images". -->
-        <section id="single-page" class="min-vh-100 bg-hero-image"
-            style="--bg-image: url(../images/site-singlepage.jpg)">
+        <section id="repair-pc" class="min-vh-100 bg-hero-image"
+            style="--bg-image: url(../img/servicios/repair-pc.webp)">
             <article class="min-vh-100 bg-alpha-color d-flex align-items-center">
                 <div class="container">
                     <!-- La clase "offset-lg-6", agregará seis columnas vacías a la izquierda del elemento "article" dentro del cual se aplicó. -->
@@ -325,10 +550,10 @@
 
         <!-- IMPORTANTE: cuando se declara la Hero Image mediante el atributo "style", se debe asignar una URL
      relativa tomando como referencia el archivo CSS externo y NO el archivo "sitios.html"; es decir, que, como en este caso, el archivo de CSS está dentro de la carpeta "assets/css", se usó la siguiente URL para acceder
-     a la imagen respectiva "../images/site-singlepage.jpg"
+     a la imagen respectiva "../images/site-singlepage.webp"
      con lo cual se indica que la imagen se encuentra un nivel arriba de donde se encuentra el archivo de CSS externo, 
      y que se halla dentro de la carpeta "images". -->
-        <section id="multi-page" class="min-vh-100 bg-hero-image" style="--bg-image: url(../images/site-multipage.jpg)">
+        <section id="sales" class="min-vh-100 bg-hero-image" style="--bg-image: url(../img/servicios/sales.webp)">
             <article class="min-vh-100 bg-alpha-color d-flex align-items-center">
                 <div class="container">
                     <article class="col-12 col-lg-6">
