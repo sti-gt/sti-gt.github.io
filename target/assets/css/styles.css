@@ -296,3 +296,60 @@ como color de fondo de cada elemento (nav-item). */
 .text-third-color {
   color: var(--third-color);
 }
+
+/* ************************* Efecto Shake (agitar) ************************* */
+
+@keyframes shake {
+
+  10%,
+  90% {
+    /* Cuando se desea aplicar el estilo a varios fotogramas en porcentajes distintos de la animación, se agregan separados por comas (,).
+             En este caso, la transformación se aplicará cuando haya transcurrido el "10%" y el "90%" de la animación. */
+    transform: translate(-1px,
+        0px);
+    /* Desplazamiento de "-1px" en el eje X, y desplazamiento de "0px" en el eje Y. */
+  }
+
+  20%,
+  80% {
+    /* Cuando se desea aplicar el estilo a varios fotogramas en porcentajes distintos de la animación, se agregan separados por comas (,).
+             En este caso, la transformación se aplicará cuando haya transcurrido el "20%" y el "80%" de la animación. */
+    transform: translate(2px,
+        0px);
+    /* Desplazamiento de "-1px" en el eje X, y desplazamiento de "0px" en el eje Y. */
+  }
+
+  30%,
+  50%,
+  70% {
+    /* Cuando se desea aplicar el estilo a varios fotogramas en porcentajes distintos de la animación, se agregan separados por comas (,).
+             En este caso, la transformación se aplicará cuando haya transcurrido el "30%", el "50%" y el "70%" de la animación. */
+    transform: translate(-4px,
+        0px);
+    /* Desplazamiento de "-1px" en el eje X, y desplazamiento de "0px" en el eje Y. */
+  }
+
+  40%,
+  60% {
+    /* Cuando se desea aplicar el estilo a varios fotogramas en porcentajes distintos de la animación, se agregan separados por comas (,).
+             En este caso, la transformación se aplicará cuando haya transcurrido el "40%" y el "60%" de la animación. */
+    transform: translate(4px,
+        0px);
+    /* Desplazamiento de "-1px" en el eje X, y desplazamiento de "0px" en el eje Y. */
+  }
+}
+
+
+.shake {
+
+
+  cursor: pointer;
+
+  display: inline-block;
+
+}
+
+.shake:hover {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97);
+
+}
