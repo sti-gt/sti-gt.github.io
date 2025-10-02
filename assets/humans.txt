@@ -1,0 +1,31 @@
+/* 🐺 andreiarriaza - https://andreiarriaza.github.io */
+
+
+/* TEAM */
+Design & Develop: Andrei Arriaza
+Location: Guatemala, Guatemala
+
+
+/* THANKS */
+Soli Deo Gloria /SDG):
+Framework: Bootstrap
+Hosting: GitHub
+
+
+/* TECHNOLOGY */
+HTML5, CSS3, JavaScript, Bootstrap
+
+
+/* RESOURCES */
+- 
+- 
+- 
+
+
+/* INSPIRATION */
+- 
+- 
+- 
+- 
+- 
+-
